@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		8050FC022D7795F4000DCDB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8050FBE72D7795F4000DCDB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8050FBEE2D7795F4000DCDB6;
+			remoteInfo = "ESP32 TEST";
+		};
+		8050FC0C2D7795F4000DCDB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8050FBE72D7795F4000DCDB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8050FBEE2D7795F4000DCDB6;
+			remoteInfo = "ESP32 TEST";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8050FBEF2D7795F4000DCDB6 /* ESP32 TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ESP32 TEST.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8050FC012D7795F4000DCDB6 /* ESP32 TESTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ESP32 TESTTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8050FC0B2D7795F4000DCDB6 /* ESP32 TESTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ESP32 TESTUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8050FC282D77EE84000DCDB6 /* Exceptions for "ESP32 TESTUITests" folder in "ESP32 TEST" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				arduinocode.rtf,
+			);
+			target = 8050FBEE2D7795F4000DCDB6 /* ESP32 TEST */;
+		};
+		8050FC292D77EE84000DCDB6 /* Exceptions for "ESP32 TESTUITests" folder in "ESP32 TESTTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				arduinocode.rtf,
+			);
+			target = 8050FC002D7795F4000DCDB6 /* ESP32 TESTTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8050FBF12D7795F4000DCDB6 /* ESP32 TEST */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "ESP32 TEST";
+			sourceTree = "<group>";
+		};
+		8050FC042D7795F4000DCDB6 /* ESP32 TESTTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "ESP32 TESTTests";
+			sourceTree = "<group>";
+		};
+		8050FC0E2D7795F4000DCDB6 /* ESP32 TESTUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8050FC282D77EE84000DCDB6 /* Exceptions for "ESP32 TESTUITests" folder in "ESP32 TEST" target */,
+				8050FC292D77EE84000DCDB6 /* Exceptions for "ESP32 TESTUITests" folder in "ESP32 TESTTests" target */,
+			);
+			path = "ESP32 TESTUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8050FBEC2D7795F4000DCDB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8050FBFE2D7795F4000DCDB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8050FC082D7795F4000DCDB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8050FBE62D7795F4000DCDB6 = {
+			isa = PBXGroup;
+			children = (
+				8050FBF12D7795F4000DCDB6 /* ESP32 TEST */,
+				8050FC042D7795F4000DCDB6 /* ESP32 TESTTests */,
+				8050FC0E2D7795F4000DCDB6 /* ESP32 TESTUITests */,
+				8050FBF02D7795F4000DCDB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8050FBF02D7795F4000DCDB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8050FBEF2D7795F4000DCDB6 /* ESP32 TEST.app */,
+				8050FC012D7795F4000DCDB6 /* ESP32 TESTTests.xctest */,
+				8050FC0B2D7795F4000DCDB6 /* ESP32 TESTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8050FBEE2D7795F4000DCDB6 /* ESP32 TEST */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8050FC152D7795F4000DCDB6 /* Build configuration list for PBXNativeTarget "ESP32 TEST" */;
+			buildPhases = (
+				8050FBEB2D7795F4000DCDB6 /* Sources */,
+				8050FBEC2D7795F4000DCDB6 /* Frameworks */,
+				8050FBED2D7795F4000DCDB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8050FBF12D7795F4000DCDB6 /* ESP32 TEST */,
+			);
+			name = "ESP32 TEST";
+			packageProductDependencies = (
+			);
+			productName = "ESP32 TEST";
+			productReference = 8050FBEF2D7795F4000DCDB6 /* ESP32 TEST.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8050FC002D7795F4000DCDB6 /* ESP32 TESTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8050FC182D7795F4000DCDB6 /* Build configuration list for PBXNativeTarget "ESP32 TESTTests" */;
+			buildPhases = (
+				8050FBFD2D7795F4000DCDB6 /* Sources */,
+				8050FBFE2D7795F4000DCDB6 /* Frameworks */,
+				8050FBFF2D7795F4000DCDB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8050FC032D7795F4000DCDB6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8050FC042D7795F4000DCDB6 /* ESP32 TESTTests */,
+			);
+			name = "ESP32 TESTTests";
+			packageProductDependencies = (
+			);
+			productName = "ESP32 TESTTests";
+			productReference = 8050FC012D7795F4000DCDB6 /* ESP32 TESTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8050FC0A2D7795F4000DCDB6 /* ESP32 TESTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8050FC1B2D7795F4000DCDB6 /* Build configuration list for PBXNativeTarget "ESP32 TESTUITests" */;
+			buildPhases = (
+				8050FC072D7795F4000DCDB6 /* Sources */,
+				8050FC082D7795F4000DCDB6 /* Frameworks */,
+				8050FC092D7795F4000DCDB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8050FC0D2D7795F4000DCDB6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8050FC0E2D7795F4000DCDB6 /* ESP32 TESTUITests */,
+			);
+			name = "ESP32 TESTUITests";
+			packageProductDependencies = (
+			);
+			productName = "ESP32 TESTUITests";
+			productReference = 8050FC0B2D7795F4000DCDB6 /* ESP32 TESTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8050FBE72D7795F4000DCDB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					8050FBEE2D7795F4000DCDB6 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					8050FC002D7795F4000DCDB6 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 8050FBEE2D7795F4000DCDB6;
+					};
+					8050FC0A2D7795F4000DCDB6 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 8050FBEE2D7795F4000DCDB6;
+					};
+				};
+			};
+			buildConfigurationList = 8050FBEA2D7795F4000DCDB6 /* Build configuration list for PBXProject "ESP32 TEST" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8050FBE62D7795F4000DCDB6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8050FBF02D7795F4000DCDB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8050FBEE2D7795F4000DCDB6 /* ESP32 TEST */,
+				8050FC002D7795F4000DCDB6 /* ESP32 TESTTests */,
+				8050FC0A2D7795F4000DCDB6 /* ESP32 TESTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8050FBED2D7795F4000DCDB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8050FBFF2D7795F4000DCDB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8050FC092D7795F4000DCDB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8050FBEB2D7795F4000DCDB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8050FBFD2D7795F4000DCDB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8050FC072D7795F4000DCDB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8050FC032D7795F4000DCDB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8050FBEE2D7795F4000DCDB6 /* ESP32 TEST */;
+			targetProxy = 8050FC022D7795F4000DCDB6 /* PBXContainerItemProxy */;
+		};
+		8050FC0D2D7795F4000DCDB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8050FBEE2D7795F4000DCDB6 /* ESP32 TEST */;
+			targetProxy = 8050FC0C2D7795F4000DCDB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8050FC132D7795F4000DCDB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8050FC142D7795F4000DCDB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8050FC162D7795F4000DCDB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ESP32 TEST/Preview Content\"";
+				DEVELOPMENT_TEAM = Z8PS8WLYZ6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ESP32-TEST-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "We need to for esp";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "you are here to kiss or piss";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaushikmanian.ESP32-TEST";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8050FC172D7795F4000DCDB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ESP32 TEST/Preview Content\"";
+				DEVELOPMENT_TEAM = Z8PS8WLYZ6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ESP32-TEST-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "We need to for esp";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "you are here to kiss or piss";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaushikmanian.ESP32-TEST";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8050FC192D7795F4000DCDB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z8PS8WLYZ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaushikmanian.ESP32-TESTTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ESP32 TEST.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ESP32 TEST";
+			};
+			name = Debug;
+		};
+		8050FC1A2D7795F4000DCDB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z8PS8WLYZ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaushikmanian.ESP32-TESTTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ESP32 TEST.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ESP32 TEST";
+			};
+			name = Release;
+		};
+		8050FC1C2D7795F4000DCDB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z8PS8WLYZ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaushikmanian.ESP32-TESTUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ESP32 TEST";
+			};
+			name = Debug;
+		};
+		8050FC1D2D7795F4000DCDB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z8PS8WLYZ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaushikmanian.ESP32-TESTUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ESP32 TEST";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8050FBEA2D7795F4000DCDB6 /* Build configuration list for PBXProject "ESP32 TEST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8050FC132D7795F4000DCDB6 /* Debug */,
+				8050FC142D7795F4000DCDB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8050FC152D7795F4000DCDB6 /* Build configuration list for PBXNativeTarget "ESP32 TEST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8050FC162D7795F4000DCDB6 /* Debug */,
+				8050FC172D7795F4000DCDB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8050FC182D7795F4000DCDB6 /* Build configuration list for PBXNativeTarget "ESP32 TESTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8050FC192D7795F4000DCDB6 /* Debug */,
+				8050FC1A2D7795F4000DCDB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8050FC1B2D7795F4000DCDB6 /* Build configuration list for PBXNativeTarget "ESP32 TESTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8050FC1C2D7795F4000DCDB6 /* Debug */,
+				8050FC1D2D7795F4000DCDB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8050FBE72D7795F4000DCDB6 /* Project object */;
+}
