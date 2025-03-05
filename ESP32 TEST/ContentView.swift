@@ -9,7 +9,7 @@ struct ContentView: View {
                 Text("Connected to \(bleManager.discoveredPeripheral?.name ?? "Device")")
                     .font(.headline)
             } else {
-                Text("Scanning for BLE devices...")
+                Text("Not connected, scanning...")
                     .font(.headline)
             }
             
@@ -21,6 +21,24 @@ struct ContentView: View {
                     .padding()
                     .frame(maxWidth: .infinity)
                     .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(8)
+                    .padding(.horizontal)
+            }
+            
+            Button(action: {
+                // Refresh connection: disconnect and then restart scanning
+                bleManager.disconnect()
+                // Optionally add a short delay before restarting the scan
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    bleManager.startScanning()
+                }
+            }) {
+                Text("Refresh Connection")
+                    .font(.title2)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.orange)
                     .foregroundColor(.white)
                     .cornerRadius(8)
                     .padding(.horizontal)

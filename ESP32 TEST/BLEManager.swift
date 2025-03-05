@@ -17,11 +17,15 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate, CBPeriph
     }
     
     func startScanning() {
-        centralManager.scanForPeripherals(withServices: [serviceUUID], options: nil)
-        print("Scanning for peripherals...")
+        // Only start scanning if not already connected.
+        if !isConnected {
+            centralManager.scanForPeripherals(withServices: [serviceUUID], options: nil)
+            print("Scanning for peripherals...")
+        }
     }
     
     // MARK: - CBCentralManagerDelegate Methods
+    
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         if central.state == .poweredOn {
             startScanning()
@@ -35,31 +39,45 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate, CBPeriph
                         advertisementData: [String : Any],
                         rssi RSSI: NSNumber) {
         print("Discovered: \(peripheral.name ?? "Unknown")")
-        discoveredPeripheral = peripheral
-        centralManager.stopScan()
-        peripheral.delegate = self
-        centralManager.connect(peripheral, options: nil)
+        // If not connected to any peripheral, take the first one.
+        if discoveredPeripheral == nil {
+            discoveredPeripheral = peripheral
+            centralManager.stopScan()
+            peripheral.delegate = self
+            centralManager.connect(peripheral, options: nil)
+        }
     }
     
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         isConnected = true
-        peripheral.discoverServices([serviceUUID])
         print("Connected to peripheral: \(peripheral.name ?? "Unknown")")
+        peripheral.discoverServices([serviceUUID])
+    }
+    
+    func centralManager(_ central: CBCentralManager,
+                        didDisconnectPeripheral peripheral: CBPeripheral,
+                        error: Error?) {
+        print("Disconnected from peripheral: \(peripheral.name ?? "Unknown")")
+        isConnected = false
+        discoveredPeripheral = nil
+        blinkCharacteristic = nil
+        // Restart scanning so a new connection can be made.
+        startScanning()
     }
     
     // MARK: - CBPeripheralDelegate Methods
+    
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         if let services = peripheral.services {
-            for service in services {
-                if service.uuid == serviceUUID {
-                    peripheral.discoverCharacteristics([characteristicUUID], for: service)
-                }
+            for service in services where service.uuid == serviceUUID {
+                peripheral.discoverCharacteristics([characteristicUUID], for: service)
             }
         }
     }
     
     func peripheral(_ peripheral: CBPeripheral,
-                    didDiscoverCharacteristicsFor service: CBService, error: Error?) {
+                    didDiscoverCharacteristicsFor service: CBService,
+                    error: Error?) {
         if let characteristics = service.characteristics {
             for characteristic in characteristics {
                 if characteristic.uuid == characteristicUUID {
@@ -71,6 +89,7 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate, CBPeriph
     }
     
     // MARK: - Send Command
+    
     func sendBlinkCommand() {
         if let peripheral = discoveredPeripheral, let characteristic = blinkCharacteristic {
             let command = "blink"
@@ -80,6 +99,15 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate, CBPeriph
             }
         } else {
             print("Device not connected or characteristic not found.")
+        }
+    }
+    
+    // MARK: - Disconnect / Refresh Connection
+    
+    // Call this method to disconnect from the current peripheral and restart scanning.
+    func disconnect() {
+        if let peripheral = discoveredPeripheral {
+            centralManager.cancelPeripheralConnection(peripheral)
         }
     }
 }
